@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Komi | Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/shop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">komi</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-banner d-flex align-items-center text-white">
+    <div class="container text-center">
+        <h1 class="fw-bold">Soft. Simple. Seoul.</h1>
+        <p>Discover minimalist Korean-inspired fashion made just for you.</p>
+        <a href="#" class="btn btn-primary mt-3">Shop Now</a>
+    </div>
+    </section>
+    <!-- Discount Banner Below Hero -->
+    <section class="discount-banner text-white text-center py-3">
+    <div class="container">
+        <h4 class="mb-1">🎉 Limited Offer: 50% Off on Summer Sets!</h4>
+        <p class="mb-0">Valid until July 31 — shop now before it’s gone!</p>
+    </div>
+    </section>
+
+
+    <!-- Shop Layout -->
+    <div class="container my-5">
+        <div class="row">
+        
+        <!-- Sidebar Filters -->
+        <aside class="col-md-3 mb-4">
+            <h5 class="fw-bold">Categories</h5>
+            <ul class="list-group mb-3">
+            <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Tops</a></li>
+            <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Bottoms</a></li>
+            <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Skirts</a></li>
+            <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Accessories</a></li>
+            <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Sets</a></li>
+            </ul>
+
+            <h5 class="fw-bold">Size</h5>
+            <ul class="list-group">
+            <li class="list-group-item">S</li>
+            <li class="list-group-item">M</li>
+            <li class="list-group-item">L</li>
+            <li class="list-group-item">Free Size</li>
+            </ul>
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="col-md-9">
+            <div class="row g-4">
+
+            <!-- Discounted Product First -->
+            <div class="col-md-4">
+                <div class="card shadow-sm border-danger">
+                <img src="../IMAGE/Skirts/Khaki Women Shorts.jpg" class="card-img-top" alt="Discount Product">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Preppy Vintage Dress</h5>
+                    <p class="text-danger fw-bold">Now $6.00 <span class="text-muted text-decoration-line-through">$18.00</span></p>
+                    <a href="#" class="btn btn-sm btn-outline-danger">Add to Cart</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Other Random Featured Products -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                <img src="../IMAGE/Tops/Woven Collar Stripe Short Sleeve Shirt For School.jpg" class="card-img-top" alt="Top Product">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Komi Shirt-Blue Stripe</h5>
+                    <p class="text-muted">$11.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                <img src="../IMAGE/Acessories/Juoxeepy Ita Bag Cute Bow Purse Aesthetic Japanese Shoulder Bag Faux Leather Tote Bag Y2k Red Handbag Purse.jpg" class="card-img-top" alt="Accessory">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mini Hair Clip Set</h5>
+                    <p class="text-muted">$2.00</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                </div>
+                </div>
+            </div>
+
+          <!-- More cards... -->
+
+            </div>
+        </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-muted border-top mt-5 pt-4">
+        <div class="container py-4 text-center">
+        <p class="mb-1">© 2025 Komi. All rights reserved.</p>
+        <div>
+            <a href="#" class="text-muted mx-2 fs-4"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-muted mx-2 fs-4"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-muted mx-2 fs-4"><i class="fab fa-tiktok"></i></a>
+        </div>
+        </div>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

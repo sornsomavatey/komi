@@ -9,7 +9,7 @@ body {
     color: #a8c6fa;
 }
 .hero-banner {
-  background-image: url('../IMAGE/shopherosection/Tranquil Aquatic Blossoms.jpeg'); /* your background image */
+  background-image: url('/images/shopherosection/Tranquil Aquatic Blossoms.jpeg'); /* your background image */
   background-size: cover;
   background-position: center;
   height: 70vh;
@@ -39,7 +39,9 @@ body {
 .card-img-top {
   height: 300px;
   object-fit: cover;
-  width: 100%; /* ensures image fills card */
+  width: 90%;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Ensure all cards are same height */
@@ -50,6 +52,7 @@ body {
 }
 
 .card-body {
+  background-color: rgb(252, 247, 255);
   flex-grow: 1;
   display: flex;
   flex-direction: column;

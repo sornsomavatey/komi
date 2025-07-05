@@ -9,7 +9,7 @@ body {
     color: #a8c6fa;
 }
 .hero-banner {
-  background-image: url('/images/shopherosection/Tranquil Aquatic Blossoms.jpeg'); /* your background image */
+  background-image: url('/images/shopherosection/blossoms.jpeg'); /* your background image */
   background-size: cover;
   background-position: center;
   height: 70vh;

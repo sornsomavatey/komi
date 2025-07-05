@@ -6,7 +6,7 @@ const products = [
     price: "$11.99"
   },
   {
-    image: "images/Acessories/Rosebag.jpg",
+    image: "images/Acessories/redbag.jpg",
     alt: "Accessory",
     title: "Komi-Red Handbag",
     price: "$12.00"
@@ -26,7 +26,7 @@ const products = [
   {
     image: "images/Tops/denimtop.jpg",
     alt: "Top",
-    title: "Block Shirt Top",
+    title: "Denim Top",
     price: "$16.00"
   },
   {

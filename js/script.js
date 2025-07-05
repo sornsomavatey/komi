@@ -56,22 +56,23 @@ const products = [
 ];
 
 const container = document.getElementById('product-list');
-
-products.forEach(product => {
-  const col = document.createElement('div');
-  col.className = 'col-md-4 mb-4';
-  col.innerHTML = `
-    <div class="card shadow-sm">
-      <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
-      <div class="card-body text-center">
-        <h5 class="card-title">${product.title}</h5>
-        <p class="text-muted">${product.price}</p>
-        <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+if (container) {
+  products.forEach(product => {
+    const col = document.createElement('div');
+    col.className = 'col-md-4 mb-4';
+    col.innerHTML = `
+      <div class="card shadow-sm">
+        <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
+        <div class="card-body text-center">
+          <h5 class="card-title">${product.title}</h5>
+          <p class="text-muted">${product.price}</p>
+          <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+        </div>
       </div>
-    </div>
-  `;
-  container.appendChild(col);
-});
+    `;
+    container.appendChild(col);
+  });
+}
 
 const discountedProducts = [
   {
@@ -98,22 +99,24 @@ const discountedProducts = [
 ];
 
 const discountContainer = document.getElementById('discount-list');
-
-discountedProducts.forEach(product => {
-  const col = document.createElement('div');
-  col.className = 'col-md-4 mb-4';
-  col.innerHTML = `
-    <div class="card shadow-sm">
-      <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
-      <div class="card-body text-center">
-        <h5 class="card-title">${product.title}</h5>
-        <p class="text-danger fw-bold">Now ${product.priceNow} 
-          <span class="text-muted text-decoration-line-through">${product.priceOld}</span>
-        </p>
-        <a href="#" class="btn btn-sm btn-outline-danger">Add to Cart</a>
+if (discountContainer) {
+  discountedProducts.forEach(product => {
+    const col = document.createElement('div');
+    col.className = 'col-md-4 mb-4';
+    col.innerHTML = `
+      <div class="card shadow-sm">
+        <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
+        <div class="card-body text-center">
+          <h5 class="card-title">${product.title}</h5>
+          <p class="text-danger fw-bold">Now ${product.priceNow} 
+            <span class="text-muted text-decoration-line-through">${product.priceOld}</span>
+          </p>
+          <a href="#" class="btn btn-sm btn-outline-danger">Add to Cart</a>
+        </div>
       </div>
-    </div>
-  `;
-  discountContainer.appendChild(col);
-});
+    `;
+    discountContainer.appendChild(col);
+  });
+}
+
 

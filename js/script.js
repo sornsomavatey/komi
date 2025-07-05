@@ -1,54 +1,54 @@
 const products = [
   {
-    image: "images/Tops/Woven Collar Stripe Short Sleeve Shirt For School.jpg",
+    image: "images/Tops/deepnavytop.jpg",
     alt: "Top Product",
     title: "Komi Shirt-Blue Stripe",
     price: "$11.99"
   },
   {
-    image: "images/Acessories/Juoxeepy Ita Bag Cute Bow Purse Aesthetic Japanese Shoulder Bag Faux Leather Tote Bag Y2k Red Handbag Purse.jpg",
+    image: "images/Acessories/Rosebag.jpg",
     alt: "Accessory",
     title: "Komi-Red Handbag",
     price: "$12.00"
   },
   {
-    image: "images/Bottoms/download (8).jpg",
+    image: "images/Bottoms/stripetrouser.jpg",
     alt: "Trouser",
     title: "Komi-Office Pants",
     price: "$18.00"
   },
   {
-    image: "images/Sets/Sleeveless Mini Dress.jpg",
+    image: "images/Sets/Sleevelessminidress.jpg",
     alt: "Dress",
     title: "Sleeveless Mini Dress",
     price: "$28.00"
   },
   {
-    image: "images/Tops/download.jpg",
+    image: "images/Tops/denimtop.jpg",
     alt: "Top",
     title: "Block Shirt Top",
     price: "$16.00"
   },
   {
-    image: "images/Acessories/download (11).jpg",
+    image: "images/Acessories/download(11).jpg",
     alt: "Bag",
     title: "Komi-Tote Bag",
     price: "$12.00"
   },
   {
-    image: "images/Acessories/Baguette Bag.jpg",
+    image: "images/Acessories/Baguette-Bag.jpg",
     alt: "Bag",
     title: "Baguette Bag",
     price: "$65.00"
   },
   {
-    image: "images/Acessories/Pearl Necklace.jpg",
+    image: "images/Acessories/Pearl-Necklace.jpg",
     alt: "Necklace",
     title: "Pearl Necklace Y2k",
     price: "$16.00"
   },
   {
-    image: "images/Sets/Autumn Mini Dress.jpg",
+    image: "images/Sets/autumnminidress.jpg",
     alt: "Blue Mini Dress",
     title: "AutumnWinter Dress",
     price: "$32.00"
@@ -75,14 +75,14 @@ products.forEach(product => {
 
 const discountedProducts = [
   {
-    image: "images/Skirts/Khaki Women Shorts.jpg",
+    image: "images/Skirts/khakiskirt.jpg",
     alt: "Discount Product",
     title: "Khaki Skirt",
     priceNow: "$5.99",
     priceOld: "$18.00"
   },
   {
-    image: "images/Tops/Puff sleeve 2 in 1.jpg",
+    image: "images/Tops/tieblacktop.jpg",
     alt: "Discount Product",
     title: "White Blouse",
     priceNow: "$9.99",

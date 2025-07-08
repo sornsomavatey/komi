@@ -26,7 +26,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">komi</a>
             <button
@@ -43,27 +43,36 @@
 
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="card.html">🛒Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="order-summary.html">Your Order</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#authModal">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
+
             </ul>
         </div>
+
         </div>
     </nav>
 
-    <section class="hero-images text-center py-4">
+    <section class="hero-images text-center py-4 pt-5 mt-5">
         <div class="container">
             <div class="row g-2">
-            <div class="col-md-4">
-                <img src="images/Models/model2.jpeg" class="img-fluid rounded shadow" alt="Look 1">
-            </div>
-            <div class="col-md-4">
-                <img src="images/Models/model3.jpeg" class="img-fluid rounded shadow" alt="Look 2">
-            </div>
-            <div class="col-md-4">
-                <img src="images/Models/modernmodel.jpeg" class="img-fluid rounded shadow" alt="Look 3">
-            </div>
+                <div class="col-md-4">
+                    <img src="images/Models/model2.jpeg" class="img-fluid rounded shadow" alt="Look 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Models/model3.jpeg" class="img-fluid rounded shadow" alt="Look 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Models/modernmodel.jpeg" class="img-fluid rounded shadow" alt="Look 3">
+                </div>
             </div>
             <h1 class="mt-4">Soft. Simple. Seoul.</h1>
             <p>Discover minimalist Korean-inspired fashion made just for you.</p>
@@ -161,7 +170,7 @@
 
             <!-- Accessories -->
             <div class="col-md-4">
-            <a href="accessories.html" class="text-decoration-none text-dark">
+            <a href="accessory.html" class="text-decoration-none text-dark">
                 <img src="images/Acessories/download(10).jpg" alt="Y2k Jewelry from Komi" class=" img-fluid rounded shadow category-image mb-2" alt="Accessories">
                 <h5>Accessories</h5>
             </a>
@@ -210,9 +219,56 @@
     </footer>
 
 
+    <!-- Auth Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="authModalLabel">Welcome to Komi! 💖</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Toggle Buttons -->
+                    <div class="d-flex justify-content-center mb-3">
+                        <button class="btn btn-komi-login me-2" id="show-login">Login</button>
+                        <button class="btn btn-komi-signup" id="show-signup">Sign Up</button>
+                    </div>
+
+                    <!-- Login Form -->
+                    <form id="login-form" class="auth-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Username" id="login-username" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-komi-login w-100">Login</button>
+                    </form>
+
+                    <!-- Signup Form (hidden by default) -->
+                    <form id="signup-form" class="auth-form d-none">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Username" id="signup-username" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email" id="signup-email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Password" id="signup-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-komi-signup w-100">Sign Up</button>
+                    </form>
+
+                    <!-- Message -->
+                    <div class="text-center mt-3" id="auth-msg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/auth-modal.js"></script>
 </body>
 </html>

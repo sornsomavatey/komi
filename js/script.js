@@ -1,4 +1,5 @@
-const products = [
+// Normal Products
+const normalproduct = [
   {
     image: "images/Tops/deepnavytop.jpg",
     alt: "Top Product",
@@ -56,24 +57,25 @@ const products = [
 ];
 
 const container = document.getElementById('product-list');
-if (container) {
-  products.forEach(product => {
-    const col = document.createElement('div');
-    col.className = 'col-md-4 mb-4';
-    col.innerHTML = `
+let content = "";
+for (let i = 0; i<normalproduct.length; i++) {
+  const product = normalproduct[i];
+  content += `
+    <div class="col-md-4 mb-4">
       <div class="card shadow-sm">
         <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
         <div class="card-body text-center">
           <h5 class="card-title">${product.title}</h5>
           <p class="text-muted">${product.price}</p>
-          <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+          <a href="#" class="btn btn-sm btn-outline-primary add-to-cart">Add to Cart</a>
         </div>
       </div>
-    `;
-    container.appendChild(col);
-  });
+    </div>
+  `;
 }
+container.innerHTML = content; 
 
+//Discounted Product
 const discountedProducts = [
   {
     image: "images/Skirts/khakiskirt.jpg",
@@ -99,24 +101,69 @@ const discountedProducts = [
 ];
 
 const discountContainer = document.getElementById('discount-list');
-if (discountContainer) {
-  discountedProducts.forEach(product => {
-    const col = document.createElement('div');
-    col.className = 'col-md-4 mb-4';
-    col.innerHTML = `
+let discountcontent = "";
+for (let i = 0; i<discountedProducts.length; i++) {  
+  const products = discountedProducts[i];
+  discountcontent += `
+    <div class="col-md-4 mb-4">
       <div class="card shadow-sm">
-        <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
+        <img src="${products.image}" class="card-img-top custom-img" alt="${products.alt}">
         <div class="card-body text-center">
-          <h5 class="card-title">${product.title}</h5>
-          <p class="text-danger fw-bold">Now ${product.priceNow} 
-            <span class="text-muted text-decoration-line-through">${product.priceOld}</span>
+          <h5 class="card-title">${products.title}</h5>
+          <p class="text-danger fw-bold">
+            Now <span class="price-now">${products.priceNow}</span>
+            <span class="text-muted text-decoration-line-through price-old ms-1">${products.priceOld}</span>
           </p>
-          <a href="#" class="btn btn-sm btn-outline-danger">Add to Cart</a>
+          <a href="#" class="btn btn-sm btn-outline-primary add-to-cart">Add to Cart</a>
         </div>
       </div>
-    `;
-    discountContainer.appendChild(col);
-  });
+    </div>
+  `;
+
 }
+discountContainer.innerHTML = discountcontent; 
 
 
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("add-to-cart")) {
+    e.preventDefault();
+
+    const card = e.target.closest(".card");
+    const title = card.querySelector(".card-title").textContent;
+    const image = card.querySelector("img").getAttribute("src");
+
+    const nowPriceElem = card.querySelector(".text-danger"); // used in discounted
+    const oldPriceElem = card.querySelector(".text-decoration-line-through");
+
+    let cartItem;
+
+    if (nowPriceElem && oldPriceElem) {
+      // ✅ Discounted product
+      const priceNow = nowPriceElem.childNodes[1]?.textContent.trim();
+      const priceOld = oldPriceElem.textContent.trim();  
+
+      cartItem = {
+        title,
+        image,
+        type: "discounted", // 🔥 this must be here!
+        priceNow,
+        priceOld
+      };
+    } else {
+      // ✅ Normal product
+      const price = card.querySelector("p").textContent.trim();
+      cartItem = {
+        title,
+        image,
+        type: "normal",
+        price
+      };
+    }
+
+    const existingCart = JSON.parse(localStorage.getItem("komi-cart")) || [];
+    existingCart.push(cartItem);
+    localStorage.setItem("komi-cart", JSON.stringify(existingCart));
+
+    alert(`${title} added to cart!`);
+  }
+});

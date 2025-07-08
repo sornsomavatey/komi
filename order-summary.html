@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Orders | Komi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/order.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">komi</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="card.html">🛒Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="order-summary.html">Your Order</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container pt-5 py-4 pt-5 mt-5">
+        <h1 class="mb-4">🛒 Your Orders</h1>
+        <div id="orders-list"></div>
+    </div>
+
+    <script>
+        const ordersList = document.getElementById("orders-list");
+        const orders = JSON.parse(localStorage.getItem("komi-orders")) || [];
+
+        if (orders.length === 0) {
+        ordersList.innerHTML = "<p>You have no orders yet.</p>";
+        } else {
+        ordersList.innerHTML = orders.map(order => {
+            const date = new Date(order.date).toLocaleString();
+            const itemsHtml = order.items.map(item => {
+            const price = item.type === "discounted" ? item.priceNow : item.price;
+            return `
+                <li>${item.title} - ${price}</li>
+            `;
+            }).join("");
+
+            return `
+            <div class="card mb-4">
+                <div class="card-header">
+                <strong>Order Date:</strong> ${date}
+                </div>
+                <div class="card-body">
+                <ul>${itemsHtml}</ul>
+                </div>
+            </div>
+            `;
+        }).join("");
+        }
+    </script>
+</body>
+</html>

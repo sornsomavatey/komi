@@ -9,6 +9,24 @@ body {
     font-weight: 700;
     font-size: 1.8rem;
     color: #a8c6fa;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link {
+  margin: 0 5px;
+}
+.navbar .nav-link.active:hover {
+    color: rgb(255, 0, 162);
+}
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #88b1f7;
+}
+
+.hero-images {
+    padding-top: 100px; /* adjust as needed */
 }
 .hero-images img {
     height: 400px;
@@ -81,4 +99,40 @@ footer {
     color: #777;
     border-top: 1px solid #ddd;
     margin-top: 3rem;
+}
+
+.btn-komi-login {
+  background: linear-gradient(to right, #88b1f7, #a8c6fa);
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.btn-komi-login:hover {
+  background: linear-gradient(to right, #6c9ae6, #88b1f7);
+  color: #fff;
+}
+
+.btn-komi-signup {
+  background: linear-gradient(to right, #ff66b3, #ffa8d6);
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.btn-komi-signup:hover {
+  background: linear-gradient(to right, #ff4fa0, #ff94c9);
+  color: #fff;
+}
+
+.auth-form input {
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.btn-komi-login, .btn-komi-signup {
+  border-radius: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  width: 120px; /* or 100%, or use flex for responsiveness */
+  text-align: center;
 }

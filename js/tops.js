@@ -37,7 +37,7 @@ const normalproduct = [
     price: "$16.00"
   },
   {
-    image: "images/Tops/komigirl.jpg",
+    image: "images/Tops/Komigirl.jpg",
     alt: "Top",
     title: "Komi Sea",
     price: "$16.00"

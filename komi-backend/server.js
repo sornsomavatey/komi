@@ -12,10 +12,13 @@ app.use(bodyParser.json());
 const JWT_SECRET = 'your_jwt_secret_key'; // Replace with env var in prod
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://komi:itskomi2525@cluster0.disrk.mongodb.net/komiDB?retryWrites=true&w=majority', {
+require('dotenv').config();
+
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
+
 .then(() => console.log("MongoDB connected"))
 .catch(err => console.error('MongoDB connection error:', err));
 

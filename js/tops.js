@@ -110,7 +110,6 @@ const discountedProducts = [
 // ✅ RENDER NORMAL PRODUCTS
 const container = document.getElementById('tops-product-list');
 let content = "";
-
 for (let i = 0; i < normalproduct.length; i++) {
   const product = normalproduct[i];
   content += `
@@ -126,7 +125,7 @@ for (let i = 0; i < normalproduct.length; i++) {
     </div>
   `;
 }
-container.innerHTML = content;
+document.getElementById("tops-product-list").innerHTML = content;
 
 // ✅ RENDER DISCOUNTED PRODUCTS
 const discountContainer = document.getElementById('tops-discount-list');

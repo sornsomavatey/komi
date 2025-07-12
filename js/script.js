@@ -73,8 +73,7 @@ for (let i = 0; i<normalproduct.length; i++) {
     </div>
   `;
 }
-container.innerHTML = content; 
-
+document.getElementById("product-list").innerHTML = content;
 //Discounted Product
 const discountedProducts = [
   {
@@ -121,7 +120,7 @@ for (let i = 0; i<discountedProducts.length; i++) {
   `;
 
 }
-discountContainer.innerHTML = discountcontent; 
+document.getElementById("discount-list").innerHTML = discountcontent;
 
 
 document.addEventListener("click", function (e) {

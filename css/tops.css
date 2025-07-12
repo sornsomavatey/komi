@@ -83,17 +83,12 @@ section h2 {
 
 /* Footer */
 footer {
-  background-color: #fff;
   color: #666;
   font-size: 0.95rem;
 }
 
 footer h6 {
   font-weight: 600;
-}
-
-footer a {
-  color: #666;
 }
 
 footer a:hover {

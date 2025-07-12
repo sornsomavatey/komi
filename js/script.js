@@ -74,6 +74,7 @@ for (let i = 0; i<normalproduct.length; i++) {
   `;
 }
 document.getElementById("product-list").innerHTML = content;
+console.log(document.getElementById("product-list"));
 //Discounted Product
 const discountedProducts = [
   {

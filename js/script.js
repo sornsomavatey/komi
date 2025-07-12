@@ -57,24 +57,25 @@ const normalproduct = [
 ];
 
 const container = document.getElementById('product-list');
-let content = "";
-for (let i = 0; i<normalproduct.length; i++) {
-  const product = normalproduct[i];
-  content += `
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm">
-        <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
-        <div class="card-body text-center">
-          <h5 class="card-title">${product.title}</h5>
-          <p class="text-muted">${product.price}</p>
-          <a href="#" class="btn btn-sm btn-outline-primary add-to-cart">Add to Cart</a>
+if (container) {
+  let content = "";
+  for (let i = 0; i < normalproduct.length; i++) {
+    const product = normalproduct[i];
+    content += `
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
+          <div class="card-body text-center">
+            <h5 class="card-title">${product.title}</h5>
+            <p class="text-muted">${product.price}</p>
+            <a href="#" class="btn btn-sm btn-outline-primary add-to-cart">Add to Cart</a>
+          </div>
         </div>
       </div>
-    </div>
-  `;
+    `;
+  }
+  container.innerHTML = content;
 }
-document.getElementById("product-list").innerHTML = content;
-console.log(document.getElementById("product-list"));
 //Discounted Product
 const discountedProducts = [
   {

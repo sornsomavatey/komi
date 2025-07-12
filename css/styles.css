@@ -38,12 +38,19 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+section h1,
+aside h1,
+nav h1,
+article h1 {
+  font-size: 2.5rem; /* match the same size you already use */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
 
 h1 {
     font-size: 2.5rem; /* match your design */
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
 }
 
 .hero p {

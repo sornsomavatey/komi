@@ -1,12 +1,9 @@
-// js/auth-modal.js
-
 document.addEventListener('DOMContentLoaded', () => {
-  const BASE_URL = 'http://localhost:5000';  // your backend server URL with port
+  const BASE_URL = 'http://localhost:5000';  // Change this to EC2 IP when deploying
 
   const loginForm = document.getElementById('login-form');
   const signupForm = document.getElementById('signup-form');
   const msg = document.getElementById('auth-msg');
-
 
   document.getElementById('show-login').onclick = () => {
     signupForm.classList.add('d-none');
@@ -20,24 +17,24 @@ document.addEventListener('DOMContentLoaded', () => {
     msg.textContent = '';
   };
 
+  // LOGIN
   loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const username = document.getElementById('login-username').value;
+    const email = document.getElementById('login-username').value;
     const password = document.getElementById('login-password').value;
 
-    const res = await fetch(`${BASE_URL}/api/login`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ username, password }),
-  });
-
+    const res = await fetch(`${BASE_URL}/api/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password }),
+    });
 
     const data = await res.json();
     if (res.ok) {
       msg.textContent = '✅ Login successful!';
       msg.className = 'text-success';
-      localStorage.setItem('komi-token', data.token);
-      localStorage.setItem('komi-username', data.username);
+      localStorage.setItem('komi-token', 'dummy-token'); // For now, since we're not using JWT yet
+      localStorage.setItem('komi-username', data.user.name);
       setTimeout(() => location.reload(), 1000);
     } else {
       msg.textContent = data.message || 'Login failed.';
@@ -45,19 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // SIGNUP
   signupForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const username = document.getElementById('signup-username').value;
+    const name = document.getElementById('signup-username').value;
     const email = document.getElementById('signup-email').value;
     const password = document.getElementById('signup-password').value;
 
-    const res = await fetch(`${BASE_URL}/api/signup`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ username, email, password }),
-  });
-
-
+    const res = await fetch(`${BASE_URL}/api/auth/signup`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, password }),
+    });
 
     const data = await res.json();
     if (res.ok) {
@@ -103,4 +99,3 @@ document.addEventListener('click', (e) => {
     location.reload();
   }
 });
-

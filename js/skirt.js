@@ -1,7 +1,7 @@
 // ✅ NORMAL PRODUCTS – Only Tops
 const normalproduct = [
   {
-    image: "images/skirts/denimpinkybow.jpg",
+    image: "images/Skirts/denimpinkybow.jpg",
     alt: "Skirt",
     title: "Komi Denim Pinky Bow",
     price: "$14.99",
@@ -11,7 +11,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/babygirlpink.jpg",
+    image: "images/Skirts/babygirlpink.jpg",
     alt: "Skirt",
     title: "Baby Girl Pink",
     price: "$16.00",
@@ -21,7 +21,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/bowblueskirt.jpg",
+    image: "images/Skirts/bowblueskirt.jpg",
     alt: "Skirt",
     title: "Bow Blue Skirt",
     price: "$14.00",
@@ -31,7 +31,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/colorfuldenim.jpg",
+    image: "images/Skirts/colorfuldenim.jpg",
     alt: "Skirt",
     title: "Colorful Denim",
     price: "$45.00",
@@ -41,7 +41,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/lightbluesea.jpg",
+    image: "images/Skirts/lightbluesea.jpg",
     alt: "Skirt",
     title: "light Blue Sea",
     price: "$15.00",
@@ -51,7 +51,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/pinkybowgirl.jpg",
+    image: "images/Skirts/pinkybowgirl.jpg",
     alt: "Skirt",
     title: "Komi Pinky Bown",
     price: "$16.00",
@@ -61,7 +61,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/whitelongskirt.jpg",
+    image: "images/Skirts/whitelongskirt.jpg",
     alt: "Skirt",
     title: "Komi White Long Skirt",
     price: "$16.00",
@@ -71,7 +71,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/whiteskirt.jpg",
+    image: "images/Skirts/whiteskirt.jpg",
     alt: "Skirt",
     title: "Komi White Skirt",
     price: "$16.00",
@@ -81,7 +81,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/metalicskirt.jpg",
+    image: "images/Skirts/metalicskirt.jpg",
     alt: "Skirt",
     title: "Komi Metallic Skirt",
     price: "$18.00",
@@ -91,7 +91,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/cottonskirt.jpg",
+    image: "images/Skirts/cottonskirt.jpg",
     alt: "Skirt",
     title: "Komi Cotton Skirt",
     price: "$32.00",
@@ -101,7 +101,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/milky.jpg",
+    image: "images/Skirts/milky.jpg",
     alt: "Skirt",
     title: "Komi Milky Short",
     price: "$17.00",
@@ -111,7 +111,7 @@ const normalproduct = [
     availability: "In Stock"
   },
   {
-    image: "images/skirts/blackstripeskirt.jpg",
+    image: "images/Skirts/blackstripeskirt.jpg",
     alt: "Skirt",
     title: "Komi Black Stripe",
     price: "$20.00",

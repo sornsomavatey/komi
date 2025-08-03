@@ -1,123 +1,123 @@
 // ✅ NORMAL PRODUCTS – Only Tops
 const normalproduct = [
   {
-    image: "images/Tops/deepnavytop.jpg",
-    alt: "Top Product",
-    title: "Komi Shirt-Blue Stripe",
-    price: "$11.99",
-    brand: "Komi",
-    size: ["S", "M"],
-    color: ["Red", "Black"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Tops/denimtop.jpg",
-    alt: "Top",
-    title: "Denim Top",
-    price: "$16.00",
+    image: "images/skirts/denimpinkybow.jpg",
+    alt: "Skirt",
+    title: "Komi Denim Pinky Bow",
+    price: "$14.99",
     brand: "Komi",
     size: ["S", "M"],
     color: ["Denim Blue"],
     availability: "In Stock"
   },
   {
-    image: "images/Tops/blacktop.jpg",
-    alt: "Top",
-    title: "Black Top",
+    image: "images/skirts/babygirlpink.jpg",
+    alt: "Skirt",
+    title: "Baby Girl Pink",
+    price: "$16.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Pink"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/skirts/bowblueskirt.jpg",
+    alt: "Skirt",
+    title: "Bow Blue Skirt",
     price: "$14.00",
     brand: "Komi",
     size: ["S", "M"],
-    color: ["Black"],
+    color: ["Blue"],
     availability: "In Stock"
   },
   {
-    image: "images/Tops/corsetblazer.jpg",
-    alt: "Top",
-    title: "Corset Blazer",
+    image: "images/skirts/colorfuldenim.jpg",
+    alt: "Skirt",
+    title: "Colorful Denim",
     price: "$45.00",
     brand: "Komi",
     size: ["S", "M"],
+    color: ["Colorful Denim"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/skirts/lightbluesea.jpg",
+    alt: "Skirt",
+    title: "light Blue Sea",
+    price: "$15.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["light Blue"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/skirts/pinkybowgirl.jpg",
+    alt: "Skirt",
+    title: "Komi Pinky Bown",
+    price: "$16.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Pink orange"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/skirts/whitelongskirt.jpg",
+    alt: "Skirt",
+    title: "Komi White Long Skirt",
+    price: "$16.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["White"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/skirts/whiteskirt.jpg",
+    alt: "Skirt",
+    title: "Komi White Skirt",
+    price: "$16.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["White"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/skirts/metalicskirt.jpg",
+    alt: "Skirt",
+    title: "Komi Metallic Skirt",
+    price: "$18.00",
+    brand: "Komi",
+    size: ["S", "M"],
     color: ["Black"],
     availability: "In Stock"
   },
   {
-    image: "images/Tops/Denimsleeve.jpg",
-    alt: "Top",
-    title: "Denim Sleeve",
-    price: "$15.00",
-    brand: "Komi",
-    size: ["S", "M"],
-    color: ["Denim Blue"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Tops/greentea.jpg",
-    alt: "Top",
-    title: "Komi Melon",
-    price: "$16.00",
-    brand: "Komi",
-    size: ["S", "M"],
-    color: ["Green Tea"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Tops/seatop.jpg",
-    alt: "Top",
-    title: "Komi Sea",
-    price: "$16.00",
-    brand: "Komi",
-    size: ["S", "M"],
-    color: ["Light Blue"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Tops/ohmyflower.jpg",
-    alt: "Top",
-    title: "Oh my Komi",
-    price: "$16.00",
-    brand: "Komi",
-    size: ["S", "M"],
-    color: ["White"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Tops/passion.jpg",
-    alt: "Top",
-    title: "Passionism",
-    price: "$18.00",
-    brand: "Komi",
-    size: ["S", "M"],
-    color: ["Yellow"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Tops/redleather.jpg",
-    alt: "Top",
-    title: "Cherry Wine",
+    image: "images/skirts/cottonskirt.jpg",
+    alt: "Skirt",
+    title: "Komi Cotton Skirt",
     price: "$32.00",
     brand: "Komi",
     size: ["S", "M"],
-    color: ["Red Cherry"],
+    color: ["Khaki Milk"],
     availability: "In Stock"
   },
   {
-    image: "images/Tops/Sportfit.jpg",
-    alt: "Top",
-    title: "Sunny Komi",
+    image: "images/skirts/milky.jpg",
+    alt: "Skirt",
+    title: "Komi Milky Short",
     price: "$17.00",
     brand: "Komi",
     size: ["S", "M"],
-    color: ["White"],
+    color: ["Milky White"],
     availability: "In Stock"
   },
   {
-    image: "images/Tops/tiewhite.jpg",
-    alt: "Top",
-    title: "White Tied",
+    image: "images/skirts/blackstripeskirt.jpg",
+    alt: "Skirt",
+    title: "Komi Black Stripe",
     price: "$20.00",
     brand: "Komi",
     size: ["S", "M"],
-    color: ["White"],
+    color: ["Black"],
     availability: "In Stock"
   }
 ];
@@ -125,50 +125,50 @@ const normalproduct = [
 // ✅ DISCOUNTED TOPS ONLY
 const discountedProducts = [
   {
-    image: "images/Tops/tieblacktop.jpg",
-    alt: "Discount Product",
-    title: "Black Tie",
+    image: "images/Skirts/leatherskirt.jpg",
+    alt: "Discount Product Skirt",
+    title: "Komi Gray Khaki Skirt",
     priceNow: "$9.99",
     priceOld: "$20.00",
     brand: "Komi",
-    color: "White",
+    color: "Gray Khaki",
     availability: "In Stock"
   },
   {
-    image: "images/Tops/Coquette.jpg",
-    alt: "Discount Product",
-    title: "Coquette",
+    image: "images/Skirts/laceupfront.jpg",
+    alt: "Discount Product Skirt",
+    title: "Komi Lace Up Front",
     priceNow: "$12.50",
     priceOld: "$25.00",
     brand: "Komi",
-    color: "White",
+    color: "Latte",
     availability: "In Stock"
   },
   {
-    image: "images/Tops/khakitanktop.jpg",
-    alt: "Discount Product",
-    title: "Khaki Tank Top",
+    image: "images/Skirts/blackdenim.jpg",
+    alt: "Discount Product Skirt",
+    title: "Black Denim Skirt with Charms",
     priceNow: "$13.99",
     priceOld: "$28.00",
     brand: "Komi",
-    color: "Khaki",
+    color: "Black",
     availability: "In Stock"
   },
   {
-    image: "images/Tops/Jacquemus.jpg",
-    alt: "Discount Product",
-    title: "Jacquemus",
+    image: "images/Skirts/khakiskirt.jpg",
+    alt: "Discount Product Skirt",
+    title: "Komi Khaki Skirt",
     priceNow: "$17.50",
     priceOld: "$35.00",
     brand: "Komi",
-    color: "Nude Pink",
+    color: "Gray",
     availability: "In Stock"
   }
 
 ];
 
 // ✅ RENDER NORMAL PRODUCTS
-const container = document.getElementById('tops-product-list');
+const container = document.getElementById('skirt-product-list');
 let content = "";
 for (let i = 0; i < normalproduct.length; i++) {
   const product = normalproduct[i];
@@ -216,10 +216,10 @@ for (let i = 0; i < normalproduct.length; i++) {
       </div>
     `;
   }
-document.getElementById("tops-product-list").innerHTML = content;
+document.getElementById("skirt-product-list").innerHTML = content;
 
 // ✅ RENDER DISCOUNTED PRODUCTS
-const discountContainer = document.getElementById('tops-discount-list');
+const discountContainer = document.getElementById('skirt-discount-list');
 let discountcontent = "";
 
 for (let i = 0; i < discountedProducts.length; i++) {

@@ -4,55 +4,91 @@ const normalproduct = [
     image: "images/Tops/deepnavytop.jpg",
     alt: "Top Product",
     title: "Komi Shirt-Blue Stripe",
-    price: "$11.99"
+    price: "$11.99",
+    brand: "Komi",
+    size: ["S", "M", "L"],
+    color: ["Deep Navy Blue"],
+    availability: "In Stock"
   },
   {
     image: "images/Acessories/redbag.jpg",
     alt: "Accessory",
     title: "Komi-Red Handbag",
-    price: "$12.00"
+    price: "$12.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Red", "Black"],
+    availability: "In Stock"
   },
   {
     image: "images/Bottoms/stripetrouser.jpg",
     alt: "Trouser",
     title: "Komi-Office Pants",
-    price: "$18.00"
+    price: "$18.00",
+    brand: "Komi",
+    size: ["S", "M", "L"],
+    color: ["Black"],
+    availability: "In Stock"
   },
   {
     image: "images/Sets/Sleevelessminidress.jpg",
     alt: "Dress",
     title: "Sleeveless Mini Dress",
-    price: "$28.00"
+    price: "$28.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Khaki Green"],
+    availability: "In Stock"
   },
   {
     image: "images/Tops/denimtop.jpg",
     alt: "Top",
     title: "Denim Top",
-    price: "$16.00"
+    price: "$16.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Denim Blue"],
+    availability: "In Stock"
   },
   {
     image: "images/Acessories/download(11).jpg",
     alt: "Bag",
     title: "Komi-Tote Bag",
-    price: "$12.00"
+    price: "$12.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["White"],
+    availability: "In Stock"
   },
   {
     image: "images/Acessories/Baguette-Bag.jpg",
     alt: "Bag",
     title: "Baguette Bag",
-    price: "$65.00"
+    price: "$65.00",
+    brand: "Komi",
+    size: ["M"],
+    color: ["Pink"],
+    availability: "In Stock"
   },
   {
     image: "images/Acessories/Pearl-Necklace.jpg",
     alt: "Necklace",
     title: "Pearl Necklace Y2k",
-    price: "$16.00"
+    price: "$16.00",
+    brand: "Komi",
+    size: ["Free Size"],
+    color: ["Silver"],
+    availability: "In Stock"
   },
   {
     image: "images/Sets/autumnminidress.jpg",
     alt: "Blue Mini Dress",
     title: "AutumnWinter Dress",
-    price: "$32.00"
+    price: "$32.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Blue"],
+    availability: "In Stock"
   }
 ];
 
@@ -61,6 +97,8 @@ if (container) {
   let content = "";
   for (let i = 0; i < normalproduct.length; i++) {
     const product = normalproduct[i];
+    const modalId = `productModal${i}`;
+
     content += `
       <div class="col-md-4 mb-4">
         <div class="card shadow-sm">
@@ -68,7 +106,36 @@ if (container) {
           <div class="card-body text-center">
             <h5 class="card-title">${product.title}</h5>
             <p class="text-muted">${product.price}</p>
-            <a href="#" class="btn btn-sm btn-outline-primary add-to-cart">Add to Cart</a>
+            <div class="d-flex flex-column gap-2">
+              <a href="#" class="btn btn-sm add-to-cart custom-add-btn">Add to Cart</a>
+              <button class="btn btn-sm custom-view-btn" data-bs-toggle="modal" data-bs-target="#${modalId}">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade modal-custom-size" id="${modalId}" tabindex="-1" aria-labelledby="${modalId}Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="${modalId}Label">${product.title}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex align-items-start gap-3">
+                <img src="${product.image}" alt="${product.name}" class="modal-product-img">
+
+                <div class="product-details text-start">
+                  <p class="mb-1"><strong>Brand:</strong> ${product.brand}</p>
+                  <p class="mb-1"><strong>Color:</strong> ${product.color}</p>
+                  <p class="mb-1"><strong>Price:</strong> ${product.price}</p>
+                  <p class="mb-1"><strong>Size:</strong> ${product.size}</p>
+                  <p class="mb-0"><strong>Availability:</strong> ${product.availability}</p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -76,6 +143,7 @@ if (container) {
   }
   container.innerHTML = content;
 }
+
 //Discounted Product
 const discountedProducts = [
   {
@@ -83,21 +151,31 @@ const discountedProducts = [
     alt: "Discount Product",
     title: "Khaki Skirt",
     priceNow: "$5.99",
-    priceOld: "$18.00"
+    priceOld: "$18.00",
+    brand: "Komi",
+    color: "Khaki",
+    availability: "In Stock"
+
   },
   {
     image: "images/Tops/tieblacktop.jpg",
     alt: "Discount Product",
     title: "White Blouse",
     priceNow: "$9.99",
-    priceOld: "$20.00"
+    priceOld: "$20.00",
+    brand: "Komi",
+    color: "White",
+    availability: "In Stock"
   },
   {
     image: "images/Sets/sampeal.jpg",
     alt: "Discount Product",
     title: "Komi- Dress",
     priceNow: "$11.99",
-    priceOld: "$24.00"
+    priceOld: "$24.00",
+    brand: "Komi",
+    color: "Khaki",
+    availability: "In Stock"
   }
 ];
 
@@ -105,6 +183,8 @@ const discountContainer = document.getElementById('discount-list');
 let discountcontent = "";
 for (let i = 0; i<discountedProducts.length; i++) {  
   const products = discountedProducts[i];
+  const modaldiscountId = `discountproductModal${i}`;
+
   discountcontent += `
     <div class="col-md-4 mb-4">
       <div class="card shadow-sm">
@@ -115,7 +195,34 @@ for (let i = 0; i<discountedProducts.length; i++) {
             Now <span class="price-now">${products.priceNow}</span>
             <span class="text-muted text-decoration-line-through price-old ms-1">${products.priceOld}</span>
           </p>
-          <a href="#" class="btn btn-sm btn-outline-primary add-to-cart">Add to Cart</a>
+          <div class="d-flex flex-column gap-2">
+            <a href="#" class="btn btn-sm add-to-cart custom-add-btn">Add to Cart</a>
+            <button class="btn btn-sm custom-view-btn" data-bs-toggle="modal" data-bs-target="#${modaldiscountId}">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade modal-custom-size" id="${modaldiscountId}" tabindex="-1" aria-labelledby="${modaldiscountId}Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="${modaldiscountId}Label">${products.title}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-start gap-3">
+              <img src="${products.image}" alt="${products.name}" class="modal-product-img">
+
+              <div class="product-details text-start">
+                <p class="mb-1"><strong>Brand:</strong> ${products.brand}</p>
+                <p class="mb-1"><strong>Color:</strong> ${products.color}</p>
+                <p class="mb-1"><strong>Price:</strong> ${products.priceNow}</p>
+                <p class="mb-0"><strong>Availability:</strong> ${products.availability}</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

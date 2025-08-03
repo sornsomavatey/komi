@@ -3,56 +3,64 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Orders | Komi</title>
+    <title>Komi | Tops</title>
+
     <!-- Performance-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
     <!-- Stylesheets-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/order.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/skirt.css" />
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">komi</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navMenu"
-                aria-controls="navMenu"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
+            <a class="navbar-brand fw-bold" href="index.html">komi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
             <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" href="card.html">🛒Cart</a></li>
                     <li class="nav-item"><a class="nav-link" href="order-summary.html">Your Order</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item" id="auth-section">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#authModal">
-                            <i class="fas fa-user"></i>
-                        </a>
-                    </li>
-
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container pt-5 py-4 pt-5 mt-5">
-        <h1 class="mb-4">🛒 Your Orders</h1>
-        <div id="orders-list"></div>
+    <!-- Tops Hero Banner -->
+    <section class="hero-banner text-white py-5 mt-5 d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <h1 class="fw-bold display-5">Komi Skirts</h1>
+            <p class="lead">Wear it once, want to live in it forever — soft vibes only, no cap xD</p>
+        </div>
+    </section>
+
+    <!-- Page Tagline -->
+    <section class="py-4 text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Fresh Fabrics, Cool Vibes</h2>
+            <p class="text-muted mb-0">Explore our curated collection of tops — from casual tees to flowy blouses.</p>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <div class="container my-5">
+        <div class="row g-4" id="skirt-discount-list"></div>
+        <div class="row g-4" id="skirt-product-list"></div>
     </div>
+
     <!-- Footer -->
     <footer class="bg-light text-muted border-top mt-5 pt-4">
         <div class="container py-4">
@@ -90,7 +98,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/order.js"></script>
+    <script src="js/skirt.js"></script>
 </body>
 </html>

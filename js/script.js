@@ -121,7 +121,7 @@ if (container) {
                 <h5 class="modal-title" id="${modalId}Label">${product.title}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body d-flex align-items-start gap-3">
+              <div class="modal-body d-flex flex-column flex-sm-row align-items-start gap-3">
                 <img src="${product.image}" alt="${product.name}" class="modal-product-img">
 
                 <div class="product-details text-start">
@@ -209,7 +209,7 @@ for (let i = 0; i<discountedProducts.length; i++) {
               <h5 class="modal-title" id="${modaldiscountId}Label">${products.title}</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex align-items-start gap-3">
+            <div class="modal-body d-flex flex-column flex-sm-row align-items-start gap-3">
               <img src="${products.image}" alt="${products.name}" class="modal-product-img">
 
               <div class="product-details text-start">

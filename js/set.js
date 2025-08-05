@@ -1,124 +1,123 @@
 // ✅ NORMAL PRODUCTS – Only Tops
 const normalproduct = [
   {
-    image: "images/Bottoms/cherrytrouser.jpg",
-    alt: "Bottom Product",
-    title: "Komi Cherry",
-    price: "$11.99",
-    brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Red"],
-    availability: "In Stock"
-
-  },
-  {
-    image: "images/Bottoms/milkytrouser.jpg",
-    alt: "Bottom Product",
-    title: "Komi Milky Day",
-    price: "$16.00",
-    brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Milky White"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Bottoms/stripetrouser.jpg",
-    alt: "Bottom Product",
-    title: "Komi the striped",
-    price: "$14.00",
-    brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Black"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Bottoms/Allydenim.jpg",
-    alt: "Bottom Product",
-    title: "Ally",
-    price: "$28.00",
-    brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Denim Blue"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Bottoms/blackleather.jpg",
-    alt: "Bottom Product",
-    title: "The leather",
-    price: "$35.00",
-    brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Black"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Bottoms/Blair.jpg",
-    alt: "Bottom Product",
-    title: "Komi Blair",
-    price: "$22.00",
-    brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Denim Blue"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Bottoms/deepnavygenz.jpg",
-    alt: "Bottom Product",
-    title: "Komi Deep Sea",
-    price: "$28.00",
-    brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Deep Navy Blue"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Bottoms/Denimshorts.jpg",
-    alt: "Bottom Product",
-    title: "Komi Deep Sea Shorts",
-    price: "$29.00",
-    brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Denim Blue"],
-    availability: "In Stock"
-  },
-  {
-    image: "images/Bottoms/doubledenim.jpg",
-    alt: "Buttom Product",
-    title: "Komi Double",
+    image: "images/Sets/bluepuff.jpg",
+    alt: "Sets",
+    title: "Komi Blue Puff Set",
     price: "$20.00",
     brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Dark Blue"],
+    size: ["S", "M"],
+    color: ["Blue"],
     availability: "In Stock"
   },
   {
-    image: "images/Bottoms/jenniedenim.jpg",
-    alt: "Bottom Product",
-    title: "Miss Komi",
+    image: "images/Sets/autumnminidress.jpg",
+    alt: "Sets",
+    title: "AutumnWinter Dress",
     price: "$19.00",
     brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Denim Black"],
+    size: ["S", "M"],
+    color: ["Blue"],
     availability: "In Stock"
   },
   {
-    image: "images/Bottoms/khakitrouser.jpg",
-    alt: "Bottom Product",
-    title: "Komi The Sand",
-    price: "$24.00",
+    image: "images/Sets/finesse.jpg",
+    alt: "Sets",
+    title: "Finesse Set",
+    price: "$16.00",
     brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Khaki"],
+    size: ["S", "M"],
+    color: ["Khaki and White"],
     availability: "In Stock"
   },
   {
-    image: "images/Bottoms/kylieleather.jpg",
-    alt: "Bottom Product",
-    title: "Komi Leather",
-    price: "$20.00",
+    image: "images/Sets/floralcorset.jpg",
+    alt: "Sets",
+    title: "Floral Corset Set",
+    price: "$25.00",
     brand: "Komi",
-    size: ["S", "M", "L"],
+    size: ["S", "M"],
+    color: ["Purple Blue"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/Sets/oneshoulderdenim.jpg",
+    alt: "Sets",
+    title: "Komi One Shoulder Denim",
+    price: "$25.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Denim Blue"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/Sets/purplepuff.jpg",
+    alt: "Sets",
+    title: "Komi Purple Puff Set",
+    price: "$22.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["purple"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/Sets/passionsets.jpg",
+    alt: "Sets",
+    title: "Komi Passion Set",
+    price: "$36.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Passion Milk"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/Sets/floralprintlace.jpg",
+    alt: "Sets",
+    title: "Floral Print Lace Set",
+    price: "$23.00",
+    brand: "Komi",
+    size: ["S", "M"],
     color: ["Black"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/Sets/redknot.jpg",
+    alt: "Sets",
+    title: "Komi Ret Knot Set",
+    price: "$55.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Red"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/Sets/rosecorset.jpg",
+    alt: "Sets",
+    title: "Rose Corset Set",
+    price: "$32.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Black"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/Sets/purplecropped.jpg",
+    alt: "Sets",
+    title: "Purple Cropped Set",
+    price: "$40.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Purple"],
+    availability: "In Stock"
+  },
+  {
+    image: "images/Sets/bluesetblackbow.jpg",
+    alt: "Sets",
+    title: "Komi Blue Set with Black Bow",
+    price: "$42.00",
+    brand: "Komi",
+    size: ["S", "M"],
+    color: ["Blue"],
     availability: "In Stock"
   }
 ];
@@ -126,59 +125,55 @@ const normalproduct = [
 // ✅ DISCOUNTED TOPS ONLY
 const discountedProducts = [
   {
-    image: "images/Bottoms/pinkypants.jpg",
+    image: "images/Sets/sweetbows.jpg",
     alt: "Discount Product",
-    title: "KPink",
-    priceNow: "$9.00",
-    priceOld: "$18.00",
+    title: "Sweet Bows Set",
+    priceNow: "$9.99",
+    priceOld: "$20.00",
     brand: "Komi",
-    size: ["Free Size"],
-    color: ["Pink"],
+    color: "Blue",
     availability: "In Stock"
   },
   {
-    image: "images/Bottoms/misslightdenim.jpg",
+    image: "images/Sets/Stripebrown.jpg",
     alt: "Discount Product",
-    title: "Miss pale",
-    priceNow: "$12.50",
-    priceOld: "$25.00",
+    title: "Stripe Brown Set",
+    priceNow: "$20.00",
+    priceOld: "$40.00",
     brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Denim Light Blue"],
+    color: "Brown",
     availability: "In Stock"
   },
   {
-    image: "images/Bottoms/thetrend.jpg",
+    image: "images/Sets/whiteky.jpg",
     alt: "Discount Product",
-    title: "Komi Pop",
+    title: "White Ky Set",
     priceNow: "$13.99",
     priceOld: "$28.00",
     brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Dark Blue Denim"],
+    color: "White",
     availability: "In Stock"
   },
   {
-    image: "images/Bottoms/whiteshorts.jpg",
+    image: "images/Sets/Sleevelessminidress.jpg",
     alt: "Discount Product",
-    title: "Komi Sand Shorts",
+    title: "Sleeveless Mini Dress",
     priceNow: "$17.50",
     priceOld: "$35.00",
     brand: "Komi",
-    size: ["S", "M", "L"],
-    color: ["Milky White"],
+    color: "Dusty Green",
     availability: "In Stock"
   }
 
 ];
 
 // ✅ RENDER NORMAL PRODUCTS
-const container = document.getElementById('bottoms-product-list');
+const container = document.getElementById('tops-product-list');
 let content = "";
-
 for (let i = 0; i < normalproduct.length; i++) {
   const product = normalproduct[i];
   const modalId = `productModal${i}`;
+
     content += `
       <div class="col-6 col-md-4 col-lg-3 mb-4">
         <div class="card shadow-sm card-wrapper">
@@ -221,10 +216,10 @@ for (let i = 0; i < normalproduct.length; i++) {
       </div>
     `;
   }
-container.innerHTML = content;
+document.getElementById("tops-product-list").innerHTML = content;
 
 // ✅ RENDER DISCOUNTED PRODUCTS
-const discountContainer = document.getElementById('bottoms-discount-list');
+const discountContainer = document.getElementById('tops-discount-list');
 let discountcontent = "";
 
 for (let i = 0; i < discountedProducts.length; i++) {
@@ -262,7 +257,6 @@ for (let i = 0; i < discountedProducts.length; i++) {
                 <p class="mb-1"><strong>Brand:</strong> ${products.brand}</p>
                 <p class="mb-1"><strong>Color:</strong> ${products.color}</p>
                 <p class="mb-1"><strong>Price:</strong> ${products.priceNow}</p>
-                <p class="mb-1"><strong>Size:</strong> ${products.size}</p>
                 <p class="mb-0"><strong>Availability:</strong> ${products.availability}</p>
               </div>
             </div>

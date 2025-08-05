@@ -58,17 +58,22 @@ a {
 }
 
 .card-body {
-  background-color: rgb(241, 254, 255);
+  background-color: white;
   flex-grow: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1.5rem;
 }
 
 .card-title {
   font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  line-height: 1.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* limit to 2 lines */
+  -webkit-box-orient: vertical;
 }
 
 .btn-outline-primary {
@@ -98,7 +103,6 @@ footer h6 {
   font-weight: 600;
 }
 
-
 footer a:hover {
   color: #007bff;
 }
@@ -106,3 +110,62 @@ footer a:hover {
 footer img {
   vertical-align: middle;
 }
+
+/* In your shop.css */
+
+.modal-custom-size .modal-dialog {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+.modal-content {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.modal-body {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  gap: 1rem;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.modal-product-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.product-details {
+  flex: 1;
+  min-width: 0; /* Allows flex item to shrink properly */
+  font-size: 0.95rem;
+  overflow-wrap: break-word;
+}
+
+
+.custom-add-btn {
+  background-color: #d69bf1b4; /* your desired background */
+  color: white;
+}
+
+.custom-add-btn:hover {
+  background-color: #50e6d5;
+}
+
+.custom-view-btn {
+  background-color: #7fc8d2;
+  color: white;
+}
+
+.custom-view-btn:hover {
+  background-color: #d651aa84;
+}
+
+
+

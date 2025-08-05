@@ -101,7 +101,7 @@ if (container) {
 
     content += `
       <div class="col-md-4 mb-4">
-        <div class="card shadow-sm">
+        <div class="card shadow-sm card-wrapper">
           <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
           <div class="card-body text-center">
             <h5 class="card-title">${product.title}</h5>
@@ -154,6 +154,7 @@ const discountedProducts = [
     priceOld: "$18.00",
     brand: "Komi",
     color: "Khaki",
+    size: ["S", "M"],
     availability: "In Stock"
 
   },
@@ -165,6 +166,7 @@ const discountedProducts = [
     priceOld: "$20.00",
     brand: "Komi",
     color: "White",
+    size: ["S", "M"],
     availability: "In Stock"
   },
   {
@@ -175,6 +177,7 @@ const discountedProducts = [
     priceOld: "$24.00",
     brand: "Komi",
     color: "Khaki",
+    size: ["S", "M"],
     availability: "In Stock"
   }
 ];
@@ -187,7 +190,7 @@ for (let i = 0; i<discountedProducts.length; i++) {
 
   discountcontent += `
     <div class="col-md-4 mb-4">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm card-wrapper">
         <img src="${products.image}" class="card-img-top custom-img" alt="${products.alt}">
         <div class="card-body text-center">
           <h5 class="card-title">${products.title}</h5>
@@ -216,6 +219,7 @@ for (let i = 0; i<discountedProducts.length; i++) {
                 <p class="mb-1"><strong>Brand:</strong> ${products.brand}</p>
                 <p class="mb-1"><strong>Color:</strong> ${products.color}</p>
                 <p class="mb-1"><strong>Price:</strong> ${products.priceNow}</p>
+                <p class="mb-1"><strong>Size:</strong> ${products.size}</p>
                 <p class="mb-0"><strong>Availability:</strong> ${products.availability}</p>
               </div>
             </div>

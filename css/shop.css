@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     color: #333;
 }
 .navbar-brand {
@@ -42,7 +42,60 @@ body {
   position: relative;
   z-index: 2;
 }
+/* Card Wrapper */
+.card-wrapper {
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
 
+.card-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  height: 330px;
+  object-fit: cover;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.card-body {
+  background-color: white;
+  flex-grow: 3;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1rem;
+  line-height: 1.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* limit to 2 lines */
+  -webkit-box-orient: vertical;
+}
+.btn-outline-primary {
+  font-size: 0.875rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+}
+
+/* Price Styles */
+.price-now {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* Discount Section Title */
+section h2 {
+  font-size: 1.8rem;
+}
 /* Discount Banner Styling */
 .discount-banner {
   background-color: #a8c6fa;
@@ -89,7 +142,7 @@ body {
 
 
 .custom-add-btn {
-  background-color: #ac51d684; /* your desired background */
+  background-color: #d69bf1b4; /* your desired background */
   color: white;
 }
 
@@ -98,7 +151,7 @@ body {
 }
 
 .custom-view-btn {
-  background-color: #57dbea;
+  background-color: #7fc8d2;
   color: white;
 }
 

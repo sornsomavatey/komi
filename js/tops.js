@@ -176,7 +176,7 @@ for (let i = 0; i < normalproduct.length; i++) {
 
     content += `
       <div class="col-6 col-md-4 col-lg-3 mb-4">
-        <div class="card shadow-sm">
+        <div class="card shadow-sm card-wrapper">
           <img src="${product.image}" class="card-img-top custom-img" alt="${product.alt}">
           <div class="card-body text-center">
             <h5 class="card-title">${product.title}</h5>
@@ -228,7 +228,7 @@ for (let i = 0; i < discountedProducts.length; i++) {
 
   discountcontent += `
     <div class="col-6 col-md-4 col-lg-3 mb-4">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm card-wrapper">
         <img src="${products.image}" class="card-img-top custom-img" alt="${products.alt}">
         <div class="card-body text-center">
           <h5 class="card-title">${products.title}</h5>

@@ -28,8 +28,16 @@ body {
 .card-wrapper {
   max-width: 260px;
   margin: 0 auto;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  overflow: hidden;
 }
 
 .text-decoration-line-through {
   text-decoration: line-through;
 }
+.custom-modal-height {
+  max-height: 600px; /* or any height you prefer */
+}
+
+

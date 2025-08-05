@@ -48,6 +48,7 @@ cartItems.forEach((item, index) => {
 
 normalContainer.innerHTML = normalHtml;
 discountContainer.innerHTML = discountHtml;
+
 const totalPrice = normalTotal + discountTotal;
 document.getElementById("cart-total").textContent = `$${totalPrice.toFixed(2)}`;
 
@@ -61,7 +62,6 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// Order button handler
 const orderBtn = document.getElementById("order-btn");
 const confirmPaymentBtn = document.getElementById("confirm-payment-btn");
 
@@ -77,13 +77,13 @@ orderBtn.addEventListener("click", () => {
   paymentModal.show();
 });
 
-// Confirm payment handler
 confirmPaymentBtn.addEventListener("click", async () => {
   if (cartItems.length === 0) {
     alert("Your cart is empty!");
     return;
   }
 
+  // Save order data
   const orderData = {
     items: cartItems,
     total: totalPrice,
@@ -119,8 +119,17 @@ confirmPaymentBtn.addEventListener("click", async () => {
 
   localStorage.removeItem("komi-cart");
 
-  const modalInstance = bootstrap.Modal.getInstance(document.getElementById('paymentModal'));
-  modalInstance.hide();
+  // Modal handling
+  const paymentModalEl = document.getElementById('paymentModal');
+  const thankYouModalEl = document.getElementById('thankYouModal');
 
-  window.location.href = "order-summary.html";
+  const paymentModal = bootstrap.Modal.getInstance(paymentModalEl);
+  const thankYouModal = new bootstrap.Modal(thankYouModalEl);
+
+  paymentModal.hide();
+
+  // Show thank you modal after payment modal hides
+  setTimeout(() => {
+    thankYouModal.show();
+  }, 300);
 });
